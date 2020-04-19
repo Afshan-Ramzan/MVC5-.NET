@@ -1,0 +1,49 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+
+        @{
+            var value = 2;
+            var mydays = new List<string>() { "monday", "tuesday", "wednessday", "friday" };
+
+        }
+    </div>
+    <div>
+        @foreach (var obj in mydays)
+        {
+            <h2>today is = @obj</h2>
+        }
+        @if (value == 1)
+        {
+            <h2>  i am from if block </h2>
+        }
+        else if (value == 2)
+        {
+            <h2> i am from if else block</h2>
+        }
+        else
+        {
+
+            <h2>i am from else block</h2>
+        }
+
+        @for (int i = 0; i < 10; i++)
+        {
+            <div>
+                <h1> count @i </h1>
+            </div>
+        }
+    </div>
+</body>
+</html>
